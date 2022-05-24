@@ -4,5 +4,7 @@
  * @returns number[] 重複した数字が消された数列
  */
 function unique(...args) {
-    return [];
+    return Array.from(new Set(...args));
 }
+
+module.exports = unique;
